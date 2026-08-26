@@ -1,0 +1,23 @@
+# Pipeline output. This is data, not source, and it rebuilds from the API in
+# about 85 seconds. Roughly 200MB, which does not belong in git.
+data/
+curated/
+model/
+
+# Atomic writes land here first and get renamed. A stray one means a run died
+# mid write.
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
